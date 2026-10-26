@@ -1,0 +1,10 @@
+# IDE и плагин JavaRush
+.idea/
+.javarush/
+
+# файлы сдачи задачи на JavaRush: черновики текста Issue и описания Pull Request, ссылки, факты GitHub и снимки команд — не часть репозитория
+ISSUE.md
+PR.md
+answer.txt
+github-facts.json
+report/
