@@ -13,10 +13,29 @@
   <button id="add">+</button>
   <button id="subtract">−</button>
   <button id="multiply">×</button>
+  <button id="divide">÷</button>
 
   <p>Результат: <output id="result"></output></p>
 
-  <!-- Функции калькулятора — в calc.js. Кнопки к ним пока не подключены. -->
+  <!-- Функции калькулятора — в calc.js. -->
   <script src="calc.js"></script>
+  <script>
+    const a = document.getElementById('a');
+    const b = document.getElementById('b');
+    const result = document.getElementById('result');
+
+    document.getElementById('add').addEventListener('click', () => {
+      result.value = add(Number(a.value), Number(b.value));
+    });
+    document.getElementById('subtract').addEventListener('click', () => {
+      result.value = subtract(Number(a.value), Number(b.value));
+    });
+    document.getElementById('multiply').addEventListener('click', () => {
+      result.value = multiply(Number(a.value), Number(b.value));
+    });
+    document.getElementById('divide').addEventListener('click', () => {
+      result.value = divide(Number(a.value), Number(b.value));
+    });
+  </script>
 </body>
 </html>
