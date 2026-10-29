@@ -2,15 +2,15 @@
 // Пока это заглушки: каждая сообщает, что ещё не написана.
 
 function add(a, b) {
-  throw new Error('add: ещё не написана');
+  return a + b;
 }
 
 function subtract(a, b) {
-  throw new Error('subtract: ещё не написана');
+  return a - b;
 }
 
 function multiply(a, b) {
-  throw new Error('multiply: ещё не написана');
+  return a * b;
 }
 
 // Для node test.js: тест берёт функции через require.

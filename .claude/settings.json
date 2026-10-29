@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "defaultMode": "manual",
+    "deny": [
+      "Edit(./test.js)",
+      "Read(./.env)",
+      "Bash(git push *)",
+      "Bash(curl *)",
+      "Bash(gh api *)",
+      "Bash(gh issue create *)",
+      "Bash(gh pr merge *)"
+    ]
+  },
+  "plansDirectory": "./plans"
+}
