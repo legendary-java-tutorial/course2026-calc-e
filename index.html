@@ -16,7 +16,23 @@
 
   <p>Результат: <output id="result"></output></p>
 
-  <!-- Функции калькулятора — в calc.js. Кнопки к ним пока не подключены. -->
   <script src="calc.js"></script>
+  <script>
+    const inputA = document.getElementById('a');
+    const inputB = document.getElementById('b');
+    const result = document.getElementById('result');
+
+    document.getElementById('add').addEventListener('click', () => {
+      result.textContent = add(Number(inputA.value), Number(inputB.value));
+    });
+
+    document.getElementById('subtract').addEventListener('click', () => {
+      result.textContent = subtract(Number(inputA.value), Number(inputB.value));
+    });
+
+    document.getElementById('multiply').addEventListener('click', () => {
+      result.textContent = multiply(Number(inputA.value), Number(inputB.value));
+    });
+  </script>
 </body>
 </html>
